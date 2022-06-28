@@ -3,16 +3,16 @@ using System.IO;
 
 class program
 {
-    //public static void EncryptAFile(string x)
-    //{
-    //    File.Encrypt(x);
+    public static void EncryptAFile(string x)
+    {
+        File.Encrypt(x);
 
-    //}
-    //public static void DecryptAFile(string x)
-    //{
-    //    File.Decrypt(x);
+    }
+    public static void DecryptAFile(string x)
+    {
+        File.Decrypt(x);
 
-    //}
+    }
 
 
     public static void ReadFile()
@@ -30,7 +30,15 @@ class program
     }
     static void Main()
     {
-        ReadFile();
+        ReadFile(); 
+        Console.WriteLine("Press Enter the Encrypt the file ..");
+        Console.ReadLine();
+
+        EncryptAFile(@"C:\Users\Train 08\Desktop\C#.txt");
+
+        Console.WriteLine("Press Enter the Decrypt the file ..");
+        Console.ReadLine();
+        DecryptAFile(@"C:\Users\Train 08\Desktop\C#.txt");
 
 
     }
